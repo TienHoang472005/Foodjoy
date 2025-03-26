@@ -5,5 +5,11 @@
                 <i class="fas fa-tachometer-alt"></i> Dashboard
             </a>
         </li>
+
+        <li class="nav-item">
+            <a href="{{ route('products') }}" class="nav-link text-white">
+                <i class="fas fa-box-open"></i> Quản lý sản phẩm
+            </a>
+        </li>
     </ul>
 </div>
