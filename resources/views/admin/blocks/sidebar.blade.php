@@ -5,5 +5,10 @@
                 <i class="fas fa-tachometer-alt"></i> Dashboard
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('categories') }}" class="nav-link text-white">
+                <i class="fas fa-tachometer-alt"></i> Quản lí danh mục
+            </a>
+        </li>
     </ul>
 </div>
