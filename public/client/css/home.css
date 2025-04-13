@@ -1,0 +1,80 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f1f3f5;
+}
+
+.admin-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #212529;
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar h5 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.sidebar a {
+    color: #adb5bd;
+    padding: 14px 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.admin-header {
+    background-color: #212529;
+    /* đỏ đậm giống tone đỏ chuyên nghiệp */
+    height: 60px;
+}
+
+
+footer {
+    background-color: #212529;
+    color: #ccc;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+.navbar.sticky-top {
+    z-index: 1030;
+    /* cao hơn dropdown hoặc modal */
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* mờ nhẹ */
+    backdrop-filter: blur(8px);
+    /* tùy chọn: hiệu ứng blur */
+}

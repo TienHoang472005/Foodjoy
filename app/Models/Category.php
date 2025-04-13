@@ -1,18 +1,21 @@
 <?php
+
 namespace App\Models;
 
-use PDO;
+use Illuminate\Database\Eloquent\Model;
 
-class Category extends BaseModel
+class Category extends Model
 {
-    protected $table = "services";
 
-    public function getAllCategory()
+    protected $table = 'categories';
+
+    protected $fillable = [
+        'name',
+        'status',
+    ];
+
+    public function product()
     {
-        $sql = "SELECT * FROM services";
-        $stmt = $this->connection->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
+        return $this->hasMany(Product::class);
+    }  
 }
